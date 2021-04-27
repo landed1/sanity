@@ -9,5 +9,23 @@ export default {
       name: "title",
       type: "string",
     },
+    {
+      title: "Categories",
+      name: "categories",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "category" }] }],
+    },
+    {
+      title: "SEO Focus Keyword",
+      name: "seoFocusKeyword",
+      type: "string",
+      of: [{ type: "reference", to: [{ type: "seoField" }] }],
+    },
+    {
+      title: "Menu",
+      name: "menu",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "dropdown" }] }],
+    },
   ],
 };

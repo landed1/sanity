@@ -6,6 +6,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import dropdown from "./objects/dropdown";
 import article from "./documents/article";
+import category from "./documents/category";
+import seoField from "./documents/seoField";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,5 +19,7 @@ export default createSchema({
     /* Your types here! */
     dropdown,
     article,
+    category,
+    seoField,
   ]),
 });
